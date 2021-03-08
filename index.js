@@ -6,7 +6,8 @@ const {
 
 function createWindow() {
     const win = new BrowserWindow({
-        fullscreen: true,
+        width: 800,
+        height: 600,
         webPreferences: {
             nodeIntegration: false
         }
@@ -15,9 +16,14 @@ function createWindow() {
     win.loadURL('https://mail.google.com/')
     win.setMenuBarVisibility(false)
     win.webContents.on('new-window', function (e, url) {
-        e.preventDefault();
-        require('electron').shell.openExternal(url);
+        if (url.includes('mail.google.com')) {
+            return
+        } else {
+            e.preventDefault();
+            require('electron').shell.openExternal(url);
+        }
     });
+    win.maximize()
 }
 app.whenReady().then(createWindow)
 
