@@ -8,7 +8,7 @@ I struggle with the amount of chrome tabs i open at work thus. This project so i
 
 ## How do i use it?
 
-Simply download a pre packaged file from releases or compile the code your self using the `npm run package` command.
+Simply download a pre packaged file from releases or compile the code your self using the `npm run build` command.
 
 ## Do you keep updating this project?
 

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node .",
-    "package": "electron-packager . Gmail --icon=icon.ico --overwrite"
+    "build": "electron-packager . Gmail --icon=icon.ico --overwrite"
   },
   "repository": {
     "type": "git",
