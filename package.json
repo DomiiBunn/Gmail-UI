@@ -3,17 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "github:github.com/DomiiBunn/Gmail-UI/",
+  "license": "MIT",
   "scripts": {
     "dev": "node .",
-    "build": "electron-packager . Gmail --icon=icon.ico --overwrite"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/domibun/gmailui.git"
+    "package": "electron-packager . Gmail --icon=icon.ico --overwrite",
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/domibun/gmailui/issues"
   },
