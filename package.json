@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "node .",
-    "package": "electron-packager . Gmail --icon=icon.ico --overwrite",
+    "package": "electron-packager . Gmail --icon=icon.ico --overwrite"
   },
   "keywords": [],
   "author": "",
