@@ -3,6 +3,11 @@ const {
     BrowserWindow
 } = require('electron')
 
+const autoUpdater = require("electron-updater");
+
+app.on("ready", () => {
+	autoUpdater.checkForUpdatesAndNotify();
+});
 
 function createWindow() {
     const win = new BrowserWindow({

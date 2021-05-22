@@ -1,5 +1,9 @@
 {
   "name": "gmailui",
+  "build": {
+    "appId": "com.DomiiBunn.GmailUI",
+    "productName": "GmailUI"
+  },
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
@@ -10,9 +14,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "node .",
-    "package": "electron-packager . Gmail --icon=icon.ico --overwrite"
+    "package": "electron-packager . Gmail --icon=icon.ico --overwrite",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --windows",
+    "release": "electron-builder --windows --publish always"
   },
-
   "keywords": [],
   "author": "",
   "bugs": {
@@ -23,5 +29,8 @@
     "electron": "^12.0.0",
     "electron-packager": "^15.2.0",
     "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.9"
   }
 }
